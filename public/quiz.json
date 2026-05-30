@@ -2,156 +2,422 @@
   "questions": [
     {
       "difficulty": "easy",
-      "question": "마인크래프트에서 다이아몬드 곡괭이를 만들기 위해 필요한 재료는?",
-      "options": ["다이아몬드 3개, 막대기 2개", "다이아몬드 2개, 막대기 3개", "다이아몬드 3개, 조약돌 2개", "철괴 3개, 막대기 2개"],
-      "answerIndex": 0,
-      "timeLimit": 15
-    },
-    {
-      "difficulty": "easy",
-      "question": "다음 중 마인크래프트에서 기본적으로 길들일 수 없는 동물은?",
-      "options": ["늑대", "고양이", "말", "닭"],
+      "question": "마인크래프트의 기본 주인공(기본 스킨)으로 가장 잘 알려진 남성 캐릭터의 이름은?",
+      "options": ["알렉스", "제이슨", "마이클", "스티브"],
       "answerIndex": 3,
       "timeLimit": 15
     },
     {
       "difficulty": "easy",
-      "question": "네더(지옥)로 가기 위해 필요한 포탈의 최소 크기(테두리 포함)는?",
-      "options": ["3x3", "4x5", "5x5", "4x4"],
+      "question": "마인크래프트에서 가장 상징적이고 인기 있는 하늘색의 희귀 광물은 무엇인가요?",
+      "options": ["에메랄드", "루비", "사파이어", "다이아몬드"],
+      "answerIndex": 3,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "easy",
+      "question": "마인크래프트를 처음 개발한 스웨덴의 게임 개발사 이름은 무엇인가요?",
+      "options": ["에픽게임즈", "모장(Mojang)", "닌텐도", "블리자드"],
       "answerIndex": 1,
       "timeLimit": 15
     },
     {
       "difficulty": "easy",
-      "question": "크리퍼가 번개에 맞으면 어떻게 되나요?",
-      "options": ["그냥 죽는다", "좀비 피그맨으로 변한다", "충전된 크리퍼가 된다", "아무 일도 일어나지 않는다"],
+      "question": "마인크래프트에서 좀비와 스켈레톤이 아침이 되어 햇빛을 받으면 어떻게 되나요?",
+      "options": ["도망간다", "투명해진다", "불에 탄다", "동맹이 된다"],
       "answerIndex": 2,
       "timeLimit": 15
     },
     {
       "difficulty": "easy",
-      "question": "엔더 드래곤을 잡고 나서 얻을 수 있는 아이템 중 하나인 것은?",
-      "options": ["드래곤의 알", "엔더 진주", "네더 별", "겉날개"],
-      "answerIndex": 0,
-      "timeLimit": 15
-    },
-    {
-      "difficulty": "easy",
-      "question": "주민과 거래할 때 주로 사용되는 화폐는?",
-      "options": ["다이아몬드", "금괴", "에메랄드", "철괴"],
+      "question": "4칸짜리 기본 제작 칸을 9칸(3x3)으로 늘려 다양한 아이템을 조합할 수 있게 해주는 필수 블록은?",
+      "options": ["용광로", "화로", "제작대", "모루"],
       "answerIndex": 2,
       "timeLimit": 15
     },
     {
       "difficulty": "easy",
-      "question": "철 골렘을 만들기 위해 필요한 재료의 배치는?",
-      "options": ["철 블록 2개, 호박 1개", "철 블록 3개, 호박 1개", "철 블록 4개, 호박 1개 (T자 모양)", "철 블록 5개, 호박 1개"],
+      "question": "지옥과 비슷한 분위기를 띠며, 용암이 들끓고 붉은색 계열의 블록이 많은 마인크래프트의 다른 차원 이름은?",
+      "options": ["네더(Nether)", "엔드(End)", "에테르(Aether)", "트와일라잇(Twilight)"],
+      "answerIndex": 0,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "easy",
+      "question": "마인크래프트 개발사를 현재 인수하여 게임을 소유하고 있는 거대 IT 기업은 어디인가요?",
+      "options": ["애플", "구글", "마이크로소프트", "메타"],
       "answerIndex": 2,
       "timeLimit": 15
     },
     {
       "difficulty": "easy",
-      "question": "다음 중 물 양동이를 부었을 때 용암 원천 블록이 변하는 것은?",
-      "options": ["흑요석(옵시디언)", "조약돌", "돌", "아무 일도 일어나지 않는다"],
+      "question": "마인크래프트의 기본 여성 캐릭터(스킨)의 이름은 무엇인가요?",
+      "options": ["제인", "알렉스", "앨리스", "로라"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "easy",
+      "question": "스켈레톤을 잡고 나온 '뼈'를 주어 길들일 수 있으며, 주인을 든든하게 따라다니는 동물은?",
+      "options": ["늑대", "돼지", "여우", "토끼"],
       "answerIndex": 0,
       "timeLimit": 15
     },
     {
       "difficulty": "easy",
-      "question": "마인크래프트의 기본 하루(낮과 밤) 길이는 현실 시간으로 몇 분인가요?",
-      "options": ["10분", "15분", "20분", "30분"],
+      "question": "빨간색 블록으로 옆면에 영어 알파벳 3글자가 적혀 있으며, 불을 붙이면 쾅 하고 터지는 폭약 블록은?",
+      "options": ["C4", "BOMB", "TNT", "FIRE"],
       "answerIndex": 2,
       "timeLimit": 15
     },
     {
       "difficulty": "easy",
-      "question": "셜커 상자(Shulker Box)의 가장 큰 특징은 무엇인가요?",
-      "options": ["아이템을 넣고 부숴도 내용물이 유지된다", "투명하게 변할 수 있다", "용암에 타지 않는다", "다른 상자와 겹칠 수 있다"],
+      "question": "화로에 넣고 고기를 굽거나 광물을 녹일 때 가장 흔하게 사용하는 까만색 연료 광물은 무엇인가요?",
+      "options": ["레드스톤", "금", "석탄", "에메랄드"],
+      "answerIndex": 2,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "easy",
+      "question": "좀비를 처치하면 흔히 나오며, 배고플 때 먹으면 높은 확률로 식중독(배고픔 디버프)에 걸리는 맛없는 식량은?",
+      "options": ["생쥐 고기", "썩은 고기", "독 사과", "상한 우유"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "easy",
+      "question": "마인크래프트 게임 내의 세상은 주로 어떤 모양의 물체들로 이루어져 있나요?",
+      "options": ["동그라미 (구)", "세모 (뿔)", "네모 (정육면체)", "자유롭다"],
+      "answerIndex": 2,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "easy",
+      "question": "오버월드의 맨 밑바닥에 깔려 있으며, 서바이벌 모드에서는 절대 부술 수 없는 검은색/회색 블록의 이름은?",
+      "options": ["흑요석", "기반암", "돌", "방벽"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "easy",
+      "question": "마인크래프트의 마스코트이자, 플레이어에게 다가와 '치익' 소리를 내며 폭발하는 초록색 몬스터는?",
+      "options": ["좀비", "크리퍼", "스켈레톤", "슬라임"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "easy",
+      "question": "플레이어가 눈을 마주치면 화를 내며 순간이동으로 쫓아오는 키가 크고 까만 몬스터의 이름은?",
+      "options": ["엔더맨", "눈사람", "블레이즈", "워든"],
       "answerIndex": 0,
       "timeLimit": 15
     },
     {
       "difficulty": "easy",
-      "question": "가장 기초적인 나무 곡괭이를 만들기 위해 필요한 것은?",
-      "options": ["나무 판자 3개, 막대기 2개", "원목 3개, 막대기 2개", "나무 판자 2개, 막대기 3개", "원목 2개, 막대기 3개"],
-      "answerIndex": 0,
+      "question": "마인크래프트의 실질적인 최종 보스 역할을 하는 '드래곤'의 이름은 무엇인가요?",
+      "options": ["파이어 드래곤", "아이스 드래곤", "엔더 드래곤", "네더 드래곤"],
+      "answerIndex": 2,
       "timeLimit": 15
     },
     {
       "difficulty": "easy",
-      "question": "작물을 빨리 자라게 하는 아이템은 무엇인가요?",
-      "options": ["물 양동이", "뼛가루", "석탄", "씨앗"],
+      "question": "활을 주무기로 사용하며 멀리서 화살을 쏘는 해골 모양의 몬스터는?",
+      "options": ["좀비", "크리퍼", "스파이더", "스켈레톤"],
+      "answerIndex": 3,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "easy",
+      "question": "하늘을 마음대로 날아다닐 수 있고, 몬스터에게 죽지 않으며, 모든 아이템을 무제한으로 꺼내 쓸 수 있는 게임 모드는?",
+      "options": ["서바이벌 모드", "하드코어 모드", "어드벤처 모드", "크리에이티브 모드"],
+      "answerIndex": 3,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "easy",
+      "question": "대부분의 블록은 공중에 설치해도 떨어지지 않지만, 현실처럼 중력의 영향을 받아 아래로 툭 떨어지는 블록은?",
+      "options": ["모래", "돌", "나무 판자", "흙"],
+      "answerIndex": 0,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "네더(지옥)에서 1블록을 이동하면 오버월드(현실)에서는 몇 블록을 이동한 것과 같나요?",
+      "options": ["4블록", "8블록", "16블록", "32블록"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "바닥에 떨어진 아이템이 디스폰되어 사라지기까지 걸리는 시간은 기본적으로 몇 분인가요?",
+      "options": ["1분", "2.5분", "5분", "10분"],
+      "answerIndex": 2,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "신호기(Beacon)를 가장 작은 1단 피라미드로 작동시키기 위해 필요한 광물 블록의 개수는?",
+      "options": ["4개", "9개", "16개", "25개"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "경험치를 흡수하여 도구의 내구도를 수리해 주는 마법 부여의 이름은?",
+      "options": ["수선(Mending)", "내구성(Unbreaking)", "효율(Efficiency)", "행운(Fortune)"],
+      "answerIndex": 0,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "마을 주변에서 약탈자들의 '습격(Raid)'을 성공적으로 막아냈을 때 플레이어가 얻는 효과는?",
+      "options": ["재생", "마을의 영웅", "힘", "투명화"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "레드스톤 중계기(리피터)를 우클릭하여 설정할 수 있는 최대 지연 시간은 몇 틱(Tick)인가요?",
+      "options": ["2틱", "4틱", "8틱", "10틱"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "공중을 날아다니며 플레이어를 공격하는 '팬텀'이 스폰되는 조건은 무엇인가요?",
+      "options": ["비가 올 때만", "플레이어가 3일 이상 잠을 자지 않았을 때", "엔더 드래곤을 잡기 전까지", "해발 고도 100 이상일 때"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "거북이 자랄 때 떨어뜨리는 인갑으로 만든 '거북 등딱지' 투구를 쓰면 얻는 효과는?",
+      "options": ["수중 호흡 10초 부여", "수중 이동 속도 증가", "낙하 데미지 무효화", "돌고래의 우아함 부여"],
+      "answerIndex": 0,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "엔더 드래곤을 부활시키기 위해 출구 포털 주변에 배치해야 하는 아이템은 무엇인가요?",
+      "options": ["엔더의 눈 4개", "엔드 수정 4개", "네더 별 1개", "다이아몬드 블록 4개"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "모루에서 '겉날개(Elytra)'의 내구도를 수리할 때 사용되는 재료는?",
+      "options": ["가죽", "팬텀 막", "엔더 진주", "깃털"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "네더에서 피글린들이 플레이어를 선공하지 않게 하려면 어떤 장비를 입어야 하나요?",
+      "options": ["다이아몬드 갑옷", "가죽 갑옷", "사슬 갑옷", "금 갑옷"],
+      "answerIndex": 3,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "네더라이트 주괴'를 만들기 위한 정확한 재료와 비율은?",
+      "options": ["네더라이트 파편 4개, 금괴 4개", "네더라이트 파편 3개, 철괴 3개", "네더라이트 파편 4개, 다이아몬드 4개", "고대 잔해 1개, 금괴 8개"],
+      "answerIndex": 0,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "돌 관련 블록(계단, 반블록 등)을 만들 때 재료 손실 없이 1:1 비율로 가공해주는 작업대는?",
+      "options": ["베틀", "석재 절단기", "대장장이 작업대", "지도 제작대"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "마법 부여대(Enchanting Table)에서 최고 레벨인 30레벨 인챈트를 활성화하기 위해 주변에 설치해야 하는 책장의 최소 개수는?",
+      "options": ["9개", "12개", "15개", "16개"],
+      "answerIndex": 2,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "일반 크리퍼가 벼락(번개)을 맞으면 파란 전기가 감도는 '충전된 크리퍼'가 됩니다. 이 크리퍼가 터질 때 좀비나 스켈레톤을 휘말리게 해 죽이면 확정적으로 떨어지는 희귀 아이템은?",
+      "options": ["네더의 별", "몹의 머리", "화약", "그런거 없다"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "도끼를 든 적(변명자, 피글린 야수 등)이나 플레이어의 도끼 공격을 '방패'로 막아냈을 때 나타나는 특징적인 현상은?",
+      "options": ["방어력이 영구 증가한다", "방패가 즉시 부서진다", "일정 시간 방패가 비활성화되어 막을 수 없다", "받은 데미지를 반사한다"],
+      "answerIndex": 2,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "플레이어가 네더(지옥)나 엔드(End) 차원에서 잠을 자기 위해 침대를 설치하고 누우려고 우클릭을 하면 어떤 일이 발생하나요?",
+      "options": ["스폰 지점이 저장된다", "침대 주변으로 보호막이 생긴다", "아침으로 시간이 바뀐다", "침대가 폭발을 일으킨다"],
+      "answerIndex": 3,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "네더 요새에서 스폰되는 검은색 해골 모양의 '위더 스켈레톤'에게 칼로 공격당했을 때, 플레이어의 체력 바가 까맣게 변하며 지속 피해를 입는 상태 효과의 이름은?",
+      "options": ["독", "나약함", "시듦", "속도 감소(구속)"],
+      "answerIndex": 2,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "피스톤이나 레드스톤 회로의 전기 신호를 무선으로 전달할 수 있는 '스컬크 감지기(Sculk Sensor)'가 감지하지 못하는 플레이어의 행동은 무엇인가요?",
+      "options": ["달리기", "블록 설치하기", "쉬프트(Shift) 키를 누르고 웅크려서 걷기", "높은 곳에서 떨어지기"],
+      "answerIndex": 2,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "medium",
+      "question": "마인크래프트 자바 에디션에서 서바이벌 모드로 플레이할 때, 한 인벤토리 슬롯에 겹쳐서(Stack) 가질 수 있는 '엔더 진주'의 최대 개수는 몇 개인가요?",
+      "options": ["1개", "16개", "32개", "64개"],
       "answerIndex": 1,
       "timeLimit": 15
     },
     {
       "difficulty": "hard",
-      "question": "버섯소(무시룸)에게 가위를 사용하면 무엇을 드롭하나요?",
-      "options": ["가죽 2개", "붉은 버섯 5개", "쇠고기 3개", "우유 1버킷"],
+      "question": "마인크래프트 자바 에디션 기준, 문자열을 입력하여 맵을 생성할 경우, 시드(Seed)는 몇 비트 정수일까요?",
+      "options": ["16비트(bit) 정수", "32비트(bit) 정수", "64비트(bit) 정수", "128비트(bit) 정수"],
       "answerIndex": 1,
       "timeLimit": 15
     },
     {
       "difficulty": "hard",
-      "question": "마을 영웅(Hero of the Village) 버프를 얻는 방법은 무엇인가요?",
-      "options": ["마을의 철 골렘을 모두 수리한다", "습격(Raid)을 성공적으로 막아낸다", "주민 10명 이상과 거래를 완료한다", "마을 중앙에 종을 설치한다"],
-      "answerIndex": 1,
-      "timeLimit": 15
-    },
-    {
-      "difficulty": "hard",
-      "question": "콘듀이트(신호기)를 활성화하기 위해 주위에 둘러야 하는 블록은?",
-      "options": ["프리즈머린 관련 블록", "흑요석", "다이아몬드 블록", "바다랜턴"],
-      "answerIndex": 0,
-      "timeLimit": 15
-    },
-    {
-      "difficulty": "hard",
-      "question": "겉날개(Elytra)를 수리하기 위해 모루에서 사용해야 하는 재료는?",
-      "options": ["엔더 진주", "팬텀의 막", "가죽", "깃털"],
-      "answerIndex": 1,
-      "timeLimit": 15
-    },
-    {
-      "difficulty": "hard",
-      "question": "포션 양조 시, 어색한 포션(Awkward Potion)을 만들기 위한 기본 재료는?",
-      "options": ["거미 눈", "가스트의 눈물", "네더 사마귀", "빛나는 수박"],
+      "question": "자바 에디션 최신 버전 기준으로, 한 월드당 스폰 지점을 중심으로 생성될 수 있는 요새(Stronghold)의 최대 개수는?",
+      "options": ["3개", "32개", "128개", "무제한"],
       "answerIndex": 2,
       "timeLimit": 15
     },
     {
       "difficulty": "hard",
-      "question": "레드스톤 비교기(Comparator)의 기능이 아닌 것은?",
-      "options": ["상자 안의 아이템 개수 감지", "신호 강도 비교", "신호 강도 유지", "신호를 한 방향으로만 전달 및 증폭"],
+      "question": "플레이어가 던진 '엔더의 눈'이 요새를 가리킨 뒤 떨어질 때 파괴될(깨질) 확률은 정확히 몇 %인가요?",
+      "options": ["10%", "20%", "33%", "50%"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "마인크래프트에서 현실 1초는 몇 Tick인가요?",
+      "options": ["10 Tick", "15 Tick", "20 Tick", "25 Tick"],
+      "answerIndex": 2,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "치트가 허용된 상태에서 크리에이티브 모드와 관전자 모드(Spectator Mode)를 빠르게 전환하는 기본 단축키는?",
+      "options": ["F3 + F4", "F3 + N", "F3 + G", "F3 + A"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "마인크래프트 자바 에디션 기준, 다음 중 엔더맨이 자연적으로 집어들 수 없는 블록은 무엇인가요?",
+      "options": ["잔디 블록", "TNT", "선인장", "영혼 모래"],
       "answerIndex": 3,
       "timeLimit": 15
     },
     {
       "difficulty": "hard",
-      "question": "위더(Wither)를 소환하기 위한 블록 배치는?",
-      "options": ["영혼 모래 4개, 위더 스켈레톤 해골 3개", "영혼 모래 3개, 위더 스켈레톤 해골 4개", "네더랙 4개, 위더 스켈레톤 해골 3개", "네더랙 4개, 스켈레톤 해골 3개"],
-      "answerIndex": 0,
-      "timeLimit": 15
-    },
-    {
-      "difficulty": "hard",
-      "question": "셜커 껍질을 얻을 수 있는 장소는?",
-      "options": ["오버월드 던전", "네더 요새", "엔드 시티", "해저 유적"],
+      "question": "마인크래프트 월드 경계(World Border)의 기본 최대 크기는 한 변의 길이가 몇 블록인가요?",
+      "options": ["10,000,000 블록", "30,000,000 블록", "60,000,000 블록", "100,000,000 블록"],
       "answerIndex": 2,
       "timeLimit": 15
     },
     {
       "difficulty": "hard",
-      "question": "슬라임이 스폰될 수 있는 조건 중 옳은 것은?",
-      "options": ["밝기 0인 모든 곳", "특정 슬라임 청크의 Y좌표 40 미만", "사막 생물군계", "버섯 섬 생물군계"],
+      "question": "하나의 피스톤 또는 끈끈이 피스톤이 한 번에 밀어낼 수 있는 블록의 최대 개수는?",
+      "options": ["8개", "10개", "12개", "15개"],
+      "answerIndex": 2,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "자바 에디션의 '무작위 틱 속도(Random Tick Speed)' 기본값은?",
+      "options": ["1", "5", "10", "20"],
+      "answerIndex": 3,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "오버월드 기준으로 싱글플레이어 게임 내 '몹 캡(Mob Cap, 몬스터 최대 스폰 제한)' 수치는 기본적으로 몇 마리인가요?",
+      "options": ["50마리", "70마리", "100마리", "128마리"],
       "answerIndex": 1,
       "timeLimit": 15
     },
     {
       "difficulty": "hard",
-      "question": "다음 중 호퍼(깔때기)로 아이템을 빨아들일 수 없는 블록은?",
-      "options": ["엔더 상자", "화로", "양조기", "상자"],
+      "question": "아이템 액자에 아이템을 넣고 레드스톤 비교기를 연결한 뒤, 아이템을 돌려 맞출 수 있는 최대 출력 신호 세기는?",
+      "options": ["4", "8", "12", "15"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "다음 중 신호기(Beacon)이 제공할 수 없는 효과는?",
+      "options": ["성급함 (Haste)", "신속 (Speed)", "힘 (Strength)", "수중 호흡 (water_breathing)"],
+      "answerIndex": 3,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "피스톤이 블록을 밀 때 생성되는 일시적 블록이며 피스톤 작동 중에만 존재하는 블록의 ID는?",
+      "options": ["moving_piston", "piston_head", "moving_block", "falling_block"],
       "answerIndex": 0,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "모든 근거지(stronghold)는 고리 형태 내에서 임의의 위치에 배치되어 있습니다. 오버월드 중심(0,0)을 기준으로 첫 번째 링에 생성되는 요새의 개수는 몇 개인가요?",
+      "options": ["3개", "8개", "10개", "16개"],
+      "answerIndex": 0,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "자바 에디션 최신 버전에서 네더의 '보루 잔해(Bastion Remnant)' 종류 중, 상자에 '자석석(Lodestone)'이 반드시 들어있는 유형은 무엇인가요?",
+      "options": ["주택 구역 (Housing units)", "호글린 마구간 (Hoglin stables)", "보물방 (Treasure room)", "다리 (Bridge)"],
+      "answerIndex": 3,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "레드스톤 비교기가 감지 할 수 없는 블록 업데이트는?",
+      "options": ["통에 아이템이 추가됨", "소리블록의 소리를 바꿈", "독서대 위 책의 페이지를 넘김", "벌통에 꿀이 참"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "다음 중 끈끈이 피스톤이 작동할 때, 밀 수는 있지만 '당길 수는 없는' 블록은 무엇인가요?",
+      "options": ["고대잔해", "유광 테라코타", "수박", "호퍼"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "마인크래프트 레드스톤 회로 시스템에서 '중계기(repeater)'가 기본적으로 연장해 주는 전기 신호의 최대 길이는 몇 블록인가요?",
+      "options": ["10블록", "15블록", "20블록", "30블록"],
+      "answerIndex": 1,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "지옥 차원이 완전히 새롭게 바뀌며 네더라이트 장비, 피글린, 스트라이더, 자석석 블록 등이 대거 추가된 '네더 업데이트(Nether Update)' 버전은?",
+      "options": ["1.14 버전", "1.15 버전", "1.16 버전", "1.17 버전"],
+      "answerIndex": 2,
+      "timeLimit": 15
+    },
+    {
+      "difficulty": "hard",
+      "question": "마인크래프트 26.1 버전의 정식 업데이트 명칭은 무엇인가요?",
+      "options": ["광란의 탈것(Mounts of Mayhem)", "풍부한 업데이트 (The Bountiful Update)", "꼬마 몹 대소동(Tiny Takeover)", "야생 업데이트 (Wild Update)"],
+      "answerIndex": 2,
       "timeLimit": 15
     }
   ]

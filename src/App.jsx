@@ -197,31 +197,45 @@ function App() {
 
   const renderDifficultySelect = () => (
     <div className="landing-card" style={{ textAlign: 'center' }}>
-      <h2 className="main-title" style={{ marginBottom: '40px', fontSize: '2.5rem' }}>도전할 난이도를 선택하세요</h2>
+      <h2 className="main-title" style={{ marginBottom: '50px', fontSize: '2rem' }}>난이도 선택</h2>
       
       <div className="difficulty-grid">
         <div 
           className="diff-card easy"
           onClick={() => handleDifficultySelect('easy')}
         >
-          <div className="diff-icon">🌱</div>
-          <div className="diff-title">Easy</div>
-          <div className="diff-desc">초보자를 위한 가벼운 문제</div>
+          <div className="diff-icon-wrapper">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <div className="diff-text-area">
+            <div className="diff-title">Easy</div>
+            <div className="diff-desc">초보자를 위한 가벼운 문제</div>
+          </div>
         </div>
         
         <div 
           className="diff-card hard"
           onClick={() => handleDifficultySelect('hard')}
         >
-          <div className="diff-icon">⚔️</div>
-          <div className="diff-title">Hard</div>
-          <div className="diff-desc">고인물을 위한 극악무도한 문제</div>
+          <div className="diff-icon-wrapper">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+            </svg>
+          </div>
+          <div className="diff-text-area">
+            <div className="diff-title">Hard</div>
+            <div className="diff-desc">고인물을 위한 극악무도한 문제</div>
+          </div>
         </div>
       </div>
       
       <button 
         className="text-button" 
-        style={{ marginTop: '40px' }}
+        style={{ marginTop: '50px' }}
         onClick={() => setGameState('start')}
       >
         뒤로 가기

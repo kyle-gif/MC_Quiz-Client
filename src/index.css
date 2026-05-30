@@ -395,6 +395,8 @@ body {
   color: var(--text-white);
   line-height: 1.5;
   margin-top: 4px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .options-grid {
@@ -417,6 +419,8 @@ body {
   align-items: center;
   font-family: inherit;
   text-align: left;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .option-button:hover:not(.disabled) {
@@ -691,71 +695,85 @@ body {
    DIFFICULTY SELECT
 -------------------------------------- */
 .difficulty-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
   width: 100%;
-  max-width: 700px;
   margin: 0 auto;
 }
 
 .diff-card {
-  background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--border-divider);
-  border-radius: 12px;
-  padding: 40px 20px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 16px;
   text-align: center;
 }
 
 .diff-card:hover {
-  transform: translateY(-6px);
-  background-color: rgba(255, 255, 255, 0.05);
+  transform: none;
 }
 
-.diff-card.easy:hover {
-  border-color: #4CAF50;
-  box-shadow: 0 12px 30px rgba(76, 175, 80, 0.15);
-}
-
-.diff-card.easy .diff-title {
-  color: #4CAF50;
-}
-
-.diff-card.hard:hover {
-  border-color: #F44336;
-  box-shadow: 0 12px 30px rgba(244, 67, 54, 0.15);
-}
-
-.diff-card.hard .diff-title {
-  color: #F44336;
+.diff-icon-wrapper {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-divider);
+  border-radius: 8px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .diff-icon {
   font-size: 3.5rem;
-  margin-bottom: 8px;
+}
+
+.diff-text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .diff-title {
-  font-size: 1.8rem;
-  font-weight: 900;
-  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-white);
+  letter-spacing: 0;
+  transition: color 0.2s;
 }
 
 .diff-desc {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
-  font-weight: 500;
+}
+
+.diff-card.easy:hover .diff-icon-wrapper {
+  border-color: var(--accent-lime);
+}
+
+.diff-card.easy:hover .diff-title {
+  color: var(--accent-lime);
+}
+
+.diff-card.hard:hover .diff-icon-wrapper {
+  border-color: #F44336;
+}
+
+.diff-card.hard:hover .diff-title {
+  color: #F44336;
 }
 
 @media (max-width: 600px) {
   .difficulty-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
   }
 }
