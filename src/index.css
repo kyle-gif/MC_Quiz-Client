@@ -697,8 +697,11 @@ body {
 .difficulty-grid {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
   width: 100%;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -713,10 +716,14 @@ body {
   align-items: center;
   gap: 16px;
   text-align: center;
+  flex: 1;
+  min-width: 160px;
+  max-width: 240px;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .diff-card:hover {
-  transform: none;
+  transform: translateY(-8px);
 }
 
 .diff-icon-wrapper {
@@ -728,7 +735,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.diff-card:hover .diff-icon-wrapper {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
 .diff-icon {
@@ -746,7 +757,7 @@ body {
   font-weight: 700;
   color: var(--text-white);
   letter-spacing: 0;
-  transition: color 0.2s;
+  transition: color 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .diff-desc {
@@ -760,6 +771,14 @@ body {
 
 .diff-card.easy:hover .diff-title {
   color: var(--accent-lime);
+}
+
+.diff-card.medium:hover .diff-icon-wrapper {
+  border-color: #FFA726;
+}
+
+.diff-card.medium:hover .diff-title {
+  color: #FFA726;
 }
 
 .diff-card.hard:hover .diff-icon-wrapper {
@@ -776,4 +795,24 @@ body {
     align-items: center;
     gap: 40px;
   }
+}
+
+/* -------------------------------------
+   PAGE TRANSITION ANIMATIONS
+-------------------------------------- */
+@keyframes pageFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.landing-card,
+.result-card,
+.quiz-container {
+  animation: pageFadeInUp 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }

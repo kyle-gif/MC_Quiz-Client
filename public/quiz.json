@@ -17,7 +17,7 @@
     {
       "difficulty": "easy",
       "question": "마인크래프트를 처음 개발한 스웨덴의 게임 개발사 이름은 무엇인가요?",
-      "options": ["에픽게임즈", "모장(Mojang)", "닌텐도", "블리자드"],
+      "options": ["에픽게임즈", "모장", "닌텐도", "블리자드"],
       "answerIndex": 1,
       "timeLimit": 15
     },
@@ -122,7 +122,7 @@
     {
       "difficulty": "easy",
       "question": "활을 주무기로 사용하며 멀리서 화살을 쏘는 해골 모양의 몬스터는?",
-      "options": ["좀비", "크리퍼", "스파이더", "스켈레톤"],
+      "options": ["좀비", "크리퍼", "거미", "스켈레톤"],
       "answerIndex": 3,
       "timeLimit": 15
     },

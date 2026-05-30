@@ -218,6 +218,23 @@ function App() {
         </div>
         
         <div 
+          className="diff-card medium"
+          onClick={() => handleDifficultySelect('medium')}
+        >
+          <div className="diff-icon-wrapper">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="9" y1="21" x2="9" y2="9"></line>
+            </svg>
+          </div>
+          <div className="diff-text-area">
+            <div className="diff-title">Medium</div>
+            <div className="diff-desc">적당한 난이도의 중간 문제</div>
+          </div>
+        </div>
+
+        <div 
           className="diff-card hard"
           onClick={() => handleDifficultySelect('hard')}
         >
