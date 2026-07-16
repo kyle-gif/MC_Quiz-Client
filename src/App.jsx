@@ -3,7 +3,6 @@ import './index.css';
 
 const OptionLetters = ['A', 'B', 'C', 'D'];
 const PROJECT_ID = "mcquiz-f39a5";
-const LEADERBOARD_URL = "https://mcquiz-f39a5.web.app/leaderboard";
 
 // Helper to shuffle an array
 const shuffleArray = (array) => {
@@ -149,7 +148,7 @@ function App() {
   };
 
   if (allQuestions.length === 0) {
-    return <div className="app-container"><div className="loading-text">시스템 준비 중...</div></div>;
+    return <div className="app-container"><div className="loading-text">월드 불러오는 중...</div></div>;
   }
 
   const renderStart = () => (
@@ -164,7 +163,7 @@ function App() {
             마인크래프트<br/>
             <span className="title-highlight">상식 퀴즈</span>
           </h1>
-          <p className="subtitle">시스템 준비 완료. 당신의 지식을 테스트해보세요.</p>
+          <p className="splash-text">당신의 지식을 테스트해보세요!</p>
           
           <div className="quiz-meta-panel">
             <div className="meta-box">
@@ -183,12 +182,6 @@ function App() {
               <span className="btn-text">퀴즈 시작하기</span>
               <span className="btn-icon">→</span>
             </button>
-            <a href={LEADERBOARD_URL} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
-              <button className="action-button secondary-btn">
-                <span className="btn-text">웹 리더보드 보기</span>
-                <span className="btn-icon">🏆</span>
-              </button>
-            </a>
           </div>
         </div>
       </div>
@@ -250,12 +243,13 @@ function App() {
         </div>
       </div>
       
-      <button 
-        className="text-button" 
-        style={{ marginTop: '50px' }}
+      <button
+        className="action-button secondary-btn"
+        style={{ marginTop: '40px' }}
         onClick={() => setGameState('start')}
       >
-        뒤로 가기
+        <span className="btn-icon">←</span>
+        <span className="btn-text">뒤로 가기</span>
       </button>
     </div>
   );
@@ -264,30 +258,29 @@ function App() {
     const accuracy = Math.round((correctCount / questions.length) * 100) || 0;
     
     let rank = "초보자";
-    if (accuracy === 100) rank = "네더라이트";
-    else if (accuracy >= 80) rank = "다이아몬드";
-    else if (accuracy >= 60) rank = "철";
-    else if (accuracy >= 40) rank = "나무";
+    let rankClass = "rank-default";
+    if (accuracy === 100) { rank = "네더라이트"; rankClass = "rank-netherite"; }
+    else if (accuracy >= 80) { rank = "다이아몬드"; rankClass = "rank-diamond"; }
+    else if (accuracy >= 60) { rank = "철"; rankClass = "rank-iron"; }
+    else if (accuracy >= 40) { rank = "나무"; rankClass = "rank-wood"; }
 
     return (
       <div className="result-card">
         <div className="result-header">
           <h2 className="result-title">퀴즈 종료 ({difficulty.toUpperCase()})</h2>
-          <div className="rank-badge">{rank} 등급</div>
+          <div className={`rank-badge ${rankClass}`}>{rank} 등급</div>
         </div>
 
         <div className="score-dashboard">
-          <div className="accuracy-ring">
-            <svg viewBox="0 0 36 36" className="circular-chart">
-              <path className="circle-bg"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-              <path className="circle"
-                strokeDasharray={`${accuracy}, 100`}
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-            </svg>
+          <div className="accuracy-block">
+            <span className="score-label">정답률</span>
             <div className="accuracy-text">{accuracy}%</div>
+            <div className="accuracy-bar">
+              <div className="accuracy-bar-fill" style={{ width: `${accuracy}%` }}></div>
+            </div>
+            <span className="accuracy-detail">{correctCount} / {questions.length} 문제 정답</span>
           </div>
-          
+
           <div className="score-details">
             <span className="score-label">최종 점수</span>
             <span className="score-value">{score.toLocaleString()}</span>
@@ -297,45 +290,44 @@ function App() {
         {!isScoreSubmitted ? (
           <div className="score-submission">
             <p className="submission-prompt">이벤트 기록을 위해 학번과 이름을 남겨주세요.</p>
-            <div className="submission-form">
-              <input 
-                type="text" 
-                className="input-field" 
-                placeholder="학번 (예: 20241234)" 
+            <form
+              className="submission-form"
+              onSubmit={(e) => { e.preventDefault(); submitScoreREST(); }}
+            >
+              <input
+                type="text"
+                className="input-field"
+                placeholder="학번 (예: 20241234)"
                 value={studentId}
                 onChange={(e) => setStudentId(e.target.value)}
                 maxLength={12}
+                autoFocus
               />
-              <input 
-                type="text" 
-                className="input-field" 
-                placeholder="이름" 
+              <input
+                type="text"
+                className="input-field"
+                placeholder="이름"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 maxLength={6}
               />
-              <button 
-                className="action-button submit-btn" 
-                onClick={submitScoreREST}
+              <button
+                type="submit"
+                className="action-button submit-btn"
                 disabled={isSubmitting || !studentId.trim() || !name.trim()}
               >
-                {isSubmitting ? '등록 중...' : '원격 리더보드에 등록'}
+                {isSubmitting ? '등록 중...' : '점수 등록하기'}
               </button>
-            </div>
+            </form>
             <button className="text-button" onClick={() => setGameState('start')}>메인으로 가기</button>
           </div>
         ) : (
           <div className="leaderboard-section">
-            <h3 className="leaderboard-subtitle">점수가 웹 리더보드에 등록되었습니다!</h3>
-            <p style={{textAlign: 'center', marginBottom: '20px'}}>실시간 순위는 리더보드 페이지에서 확인하세요.</p>
-            <div style={{display: 'flex', gap: '10px', justifyContent: 'center'}}>
-              <a href={LEADERBOARD_URL} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
-                <button className="action-button">
-                  <span className="btn-text">리더보드 확인</span>
-                  <span className="btn-icon">🏆</span>
-                </button>
-              </a>
-              <button className="action-button secondary-btn" onClick={() => setGameState('start')}>
+            <div className="submit-success-icon">✓</div>
+            <h3 className="leaderboard-subtitle">점수가 등록되었습니다!</h3>
+            <p style={{textAlign: 'center', marginBottom: '24px'}}>참여해 주셔서 감사합니다.</p>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+              <button className="action-button" onClick={() => setGameState('start')}>
                 <span className="btn-text">메인으로</span>
                 <span className="btn-icon">🏠</span>
               </button>
@@ -348,7 +340,7 @@ function App() {
 
   const renderPlaying = () => {
     const q = questions[currentIndex];
-    const timeProgress = (timeLeft / (q.timeLimit || 15)) * 100;
+    const timeLimit = q.timeLimit || 15;
 
     return (
       <div className="quiz-container">
@@ -356,12 +348,14 @@ function App() {
           <span>문제 {currentIndex + 1} / {questions.length} ({difficulty.toUpperCase()})</span>
           <span className="score">점수: {score}</span>
         </div>
-        
+
         <div className="time-bar-container">
-          <div 
-            className={`time-bar ${timeLeft <= 3 ? 'warning' : ''}`} 
-            style={{ width: `${timeProgress}%` }}
-          ></div>
+          {Array.from({ length: timeLimit }, (_, i) => (
+            <div
+              key={i}
+              className={`time-cell${i < timeLeft ? ' filled' : ''}${timeLeft <= 3 ? ' warning' : ''}`}
+            ></div>
+          ))}
         </div>
 
         <div className="question-container">
@@ -406,7 +400,7 @@ function App() {
       
       {gameState === 'feedback' && (
         <div className={`feedback-overlay ${feedback}`}>
-          {feedback === 'correct' ? '정답!' : '오답!'}
+          <span className="feedback-text">{feedback === 'correct' ? '정답!' : '오답!'}</span>
         </div>
       )}
     </div>
